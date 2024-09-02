@@ -11,6 +11,8 @@ public class tcs7 {
         sc.close();
         int res = removeDuplicates(arr, n);
         System.out.println(res);
+        int res1 = removeDuplicates1(arr, n);
+        System.out.println(res1);
     }
 
     public static int removeDuplicates(int[] arr,int n) {
@@ -21,5 +23,17 @@ public class tcs7 {
         }
         return set.size();
        
+    }
+
+    public static int removeDuplicates1(int[] arr,int n) {
+        // Write your code here.
+        int i = 0;
+        for (int j = 1; j < n; j++) {
+            if(arr[i] != arr[j]){
+                i++;
+                arr[i] = arr[j];
+            }
+        }
+        return i+1;
     }
 }
