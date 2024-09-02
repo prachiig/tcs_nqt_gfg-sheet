@@ -24,6 +24,9 @@ public class tcs6 {
         else
             System.out.println("not sorted array");
     }
+
+    // TC - O(N)
+    // SC - O(1)
     public static int isSorted(int n, int []a) {
         // Write your code here.
         int flag = 0;
