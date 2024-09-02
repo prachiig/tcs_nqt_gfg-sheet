@@ -16,17 +16,10 @@ public class tcs7 {
     public static int removeDuplicates(int[] arr,int n) {
         // Write your code here.
         HashSet<Integer> set = new HashSet<>();
-        for(int i = 0; i < n-1; i++){
+        for(int i = 0; i < n; i++){
             set.add(arr[i]);
         }
         return set.size();
-        // int count = 0;
-        // for(int i = 0; i < n-1; i++){
-        //     if(arr[i] != arr[i+1])
-        //         count++;
-        //         System.out.println(arr[i] +" "+ arr[i+1]);
-        //         System.out.println(count);
-        // }
-        // return count;
+       
     }
 }
