@@ -2,6 +2,7 @@ package tcs_nqt;
 import java.util.*;
 
 // Searching in sorted array
+// Linear search and binary search implementation
 
 public class tcs10 {
     public static void main(String[] args) {
@@ -17,12 +18,12 @@ public class tcs10 {
         if(res == -1)
             System.out.println("element not found");
         else
-            System.out.println("element found");
+            System.out.println("element found at : "+res);
         int ans = binarysearch(arr, target);
         if(ans == -1)
             System.out.println("element not found in BS");
         else
-            System.out.println("element found in BS");
+            System.out.println("element found in BS at: "+ans);
     }
 
     public static int binarysearch(int[] nums, int target){
