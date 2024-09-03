@@ -1,7 +1,11 @@
 package tcs_nqt;
 import java.util.*;
 
+// You have been given an integer array/list(ARR) of size 'N'. It only contains 0s, 1s and 2s. Write a solution to sort this array/list.
 
+// Note :
+// Try to solve the problem in 'Single Scan'. 
+// ' Single Scan' refers to iterating over the array/list just once or to put it in other words, you will be visiting each element in the array/list just once.
 public class tcs12 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -17,7 +21,6 @@ public class tcs12 {
 
     public static void sort012(int[] arr)
     {
-        //Write your code here
         int countzero = 0;
         int countone = 0;
         int counttwo = 0;
@@ -30,20 +33,15 @@ public class tcs12 {
             else
                 counttwo++;
         }
-        for(int i = 0; i < n; i++){
-            while(countzero != 0){
-                arr[i] = 0;
-                countzero--;
-            }
-            while(countone != 0){
-                arr[i] = 0;
-                countone--;
-            }
-            while(counttwo != 0){
-                arr[i] = 0;
-                counttwo--;
-            }
+        int k = 0;
+        for(int i = 0; i < countzero; i++){
+            arr[k++] = 0;
         }
-        System.out.println(Arrays.toString(arr));
+        for(int i = 0; i < countone; i++){
+            arr[k++] = 1;  
+        }
+        for(int i = 0; i < counttwo; i++){
+            arr[k++] = 2;
+        }
     }
 }
