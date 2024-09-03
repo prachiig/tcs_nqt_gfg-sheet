@@ -25,7 +25,7 @@ public class tcs13 {
         }
         sc.close();
         int ans = majorityElement(arr);
-        System.out.println(ans);
+        System.out.println("majority element : "+ans);
     }
 
     public static int majorityElement(int []v) {

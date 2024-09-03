@@ -28,7 +28,7 @@ public class tcs14 {
         int ans = lowerBound(arr, n, x);
         System.out.println("lower bound: "+ans);
         int ansBS = lowerBoundBS(arr, n, x);
-        System.out.println("lower bound BS: "+ans);
+        System.out.println("lower bound BS: "+ansBS);
     }
 
 
@@ -43,6 +43,10 @@ public class tcs14 {
         }
         return n;
     }
+
+
+    // TC - O(logN)
+    // SC - O(1)
     public static int lowerBoundBS(int []arr, int n, int x) {
         // Write your code here
         int s = 0;
