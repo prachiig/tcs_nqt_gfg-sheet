@@ -19,6 +19,10 @@ public class tcs12 {
         sort012(arr);
     }
 
+    
+    // TC - O(N) + O(N)    
+    // SC- O(1)
+
     public static void sort012(int[] arr)
     {
         int countzero = 0;
