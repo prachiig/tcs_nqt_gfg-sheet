@@ -34,3 +34,6 @@ public class tcs8 {
         return arr;
     }
 }
+    // TC - O(N)
+    // SC - O(1)
+
