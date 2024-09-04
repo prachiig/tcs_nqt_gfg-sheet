@@ -26,8 +26,13 @@ public class tcs19 {
         sc.close();
         int ans = longestSubarrayWithSumK(arr, k);
         System.out.println("longest subarray with target sum k: "+ans);
+        int ans_2loop = longestSubarrayWithSumK_2loop(arr, k);
+        System.out.println("longest subarray with target sum k: "+ans_2loop);
     }
 
+
+    // TC - O(N*N*N)
+    // SC - O(1)
 
     public static int longestSubarrayWithSumK(int []a, long k) {
         // Write your code here
@@ -39,6 +44,24 @@ public class tcs19 {
                 for(int m = i; m <= j; m++){
                     sum = sum + a[m];
                 }
+                if(sum == k)
+                    len = Math.max(len, j-i+1);
+            }
+        }
+        return len;
+    }
+
+    // TC - O(N*N)
+    // SC - O(1)
+
+    public static int longestSubarrayWithSumK_2loop(int []a, long k) {
+        // Write your code here
+        int n = a.length;
+        int len = 0;
+        for(int i = 0; i < n; i++){
+            long sum = 0;
+            for(int j = i; j < n; j++){
+                sum = sum + a[j];
                 if(sum == k)
                     len = Math.max(len, j-i+1);
             }
