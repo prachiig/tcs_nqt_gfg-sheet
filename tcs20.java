@@ -48,6 +48,9 @@ public class tcs20 {
         return ans;
     }
 
+
+    // TC - O(log N)
+    // SC - O(1)
     public static int sqrtN_BS(long N) {
         long s = 0;
         long e = N;
