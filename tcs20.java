@@ -18,10 +18,12 @@ public class tcs20 {
         Scanner sc = new Scanner(System.in);
         long N = sc.nextInt();        
         sc.close();
-        int ans = sqrtN(long N);
-        System.out.println("flloor value of square root of a number: "+ans);
-        int ans_binary = sqrtN_binary(long N);
+        int ans = sqrtN(N);
+        System.out.println("floor value of square root of a number: "+ans);
+        int ans_binary = sqrtN_binary(N);
         System.out.println("floor value of square root of a number: "+ans_binary);
+        int ans_BS = sqrtN_BS(N);
+        System.out.println("floor value of square root of a number: "+ans_BS);
     }
 
     // Using the in-built sqrt() from Math library
