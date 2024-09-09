@@ -1,4 +1,5 @@
 package tcs_nqt;
+
 import java.util.*;
 
 // You are given a positive integer ‘n’.
@@ -12,7 +13,6 @@ import java.util.*;
 // Explanation:
 // The square root of the number 7 lies between 2 and 3, so the floor value is 2.
 
-
 public class tcs20 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -24,28 +24,45 @@ public class tcs20 {
         System.out.println("floor value of square root of a number: "+ans_binary);
     }
 
-
-    // Using the in-built sqrt() from Math library 
-    //TC - O(log N) - In-built binary search algorithm
+    // Using the in-built sqrt() from Math library
+    // TC - O(log N) - In-built binary search algorithm
     // SC - O(1)
     public static int sqrtN(long N) {
-		 int n = (int)Math.sqrt(N);
-		 return n;
-	}
-
+        int n = (int) Math.sqrt(N);
+        return n;
+    }
 
     // TC - O(N) - Uses linear search
     // SC - O(1)
     public static int sqrtN_binary(long N) {
         int ans = 0;
         for (long i = 1; i <= N; i++) {
-            if (i*i <= N) {
+            if (i * i <= N) {
                 ans = (int) i;
             } else {
                 break;
             }
         }
-        return ans;   
-   }
-    
+        return ans;
+    }
+
+    public static int sqrtN_BS(long N) {
+        long s = 0;
+        long e = N;
+        long mid;
+        long ans = 0;
+        while (s <= e) {
+            mid = s + (e - s) / 2;
+            if (mid * mid == N)
+                return (int) mid;
+            else if (mid * mid < N) {
+                ans = (int) mid;
+                s = mid + 1;
+            } else if (mid * mid > N) {
+                e = mid - 1;
+            }
+        }
+        return (int)ans;
+    }
+
 }
