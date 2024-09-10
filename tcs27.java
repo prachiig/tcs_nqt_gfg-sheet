@@ -40,6 +40,10 @@ class TreeNode {
     }
 }
 
+
+
+// TC - O(log2N) - balanced BST   -   O(N) - degenerate tree(skewed)
+// SC - O(1) - (Recursive stack space - O(h))
 class Solution {
     // This function searches for a node with
     // a specified value in a Binary Search Tree (BST).
