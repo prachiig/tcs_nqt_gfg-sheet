@@ -32,8 +32,8 @@ public class ts25 {
         System.out.println(superiorElements2(arr));
     }
 
-    
 
+// better
     // TC - O(N)
     // SC - O(N)
     public static List< Integer > superiorElements(int []a) {
@@ -51,7 +51,7 @@ public class ts25 {
     }
 
 
-
+// not recommended
     // TC - O(N*N)
     // SC - O(N)
     public static List< Integer > superiorElements2(int []a) {
