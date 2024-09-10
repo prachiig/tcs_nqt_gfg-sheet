@@ -6,24 +6,42 @@ public class tcs23 {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();  
         ArrayList<Integer> prices = new ArrayList<>();
-
-        int[] arr = new int[n];
-        for (int j = 0; j < arr.length; j++) {
-            arr[j] = sc.nextInt(); 
-        }    
+        for (int i = 0; i < n; i++) {
+            int x = sc.nextInt();
+            prices.add(x);
+        } 
         sc.close();
-        long ans = maxSubarraySum(arr, n);
-        System.out.println("maximum subarray sum: "+ans);
+        int ans = maximumProfit(prices);
+        System.out.println("maximum profit in buying and selling: "+ans);
+        int ans2 = maximumProfit2(prices);
+        System.out.println("maximum profit in buying and selling: "+ans2);
     }
 
+
+    // TC - O(N*N)
+    // SC - O(1)
     public static int maximumProfit(ArrayList<Integer> prices){
         // Write your code here.
         int max = 0;
         for(int i = 0; i < prices.size(); i++){
-            
             for(int j = i; j < prices.size(); j++){
-                max = Math.max(max, prices.get(j) - prices.get(i));
+                if(prices.get(j) > prices.get(i))
+                    max = Math.max(max, prices.get(j) - prices.get(i));
             }
+        }
+        return max;
+    }
+
+
+    // TC - O(N)
+    // SC - O(1)
+    public static int maximumProfit2(ArrayList<Integer> prices){
+        // Write your code here.
+        int max = 0;
+        int min = Integer.MAX_VALUE;
+        for(int i = 0; i < prices.size(); i++){
+            min = Math.min(min, prices.get(i));
+            max = Math.max(max, prices.get(i) - min);
         }
         return max;
     }
