@@ -49,7 +49,7 @@ public class tcs32 {
         printList(head);
     }
 
-    // Deleting a random node
+    // Deleting the last node
     public static Node deleteNode(Node head){
         if(head == null || head.next == null){
             return null;
