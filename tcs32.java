@@ -47,6 +47,7 @@ public class tcs32 {
         printList(newHead);
         deleteNode2(head.next);
         printList(head);
+        sc.close();
     }
 
     // Deleting the last node
@@ -69,6 +70,7 @@ public class tcs32 {
             System.out.print(head.data+" ");
             head = head.next;
         }
+        System.out.println();
     }
 
     // if given node is to be deleted according to the PS
