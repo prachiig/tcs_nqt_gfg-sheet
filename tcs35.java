@@ -30,6 +30,9 @@ public class tcs35 {
         printList(head);
         Node newHead = findMiddle(head);
         printList(newHead);
+
+        Node newHead2 = findMiddle2(head);
+        printList(newHead2);
     }
 
     public static void printList(Node head){
@@ -40,7 +43,7 @@ public class tcs35 {
         System.out.println();
     }
 
-    // TC - O(N + N/2)
+    // TC - O(N + N/2) - brute force
     // SC - O(1)
     public static Node findMiddle(Node head)
     {
@@ -59,5 +62,23 @@ public class tcs35 {
             i++;
         }
         return temp;
+    }
+
+    // TC - O(N/2) - optimal
+    // SC - O(1)
+    public static Node findMiddle2(Node head)
+    {
+        // Write your code here.
+        Node slow = head;
+        Node fast = head;
+        if(head.next == null)
+            return head;
+        while(fast != null && slow != null){
+            if(fast.next == null)
+                return slow;
+            fast = fast.next.next;
+            slow = slow.next;
+        }
+        return slow;
     }
 }
