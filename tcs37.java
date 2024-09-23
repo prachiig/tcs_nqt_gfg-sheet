@@ -2,6 +2,10 @@ package tcs_nqt;
 import java.util.*;
 
 
+
+// Implement Queue Data Structure using Array with all functions like pop, push, top, size, etc.
+
+
 // TC - 0(1)
 // SC - 0(N)
 
