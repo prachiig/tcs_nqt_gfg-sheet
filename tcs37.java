@@ -1,6 +1,10 @@
 package tcs_nqt;
 import java.util.*;
 
+
+// TC - 0(1)
+// SC - 0(N)
+
 class queue{
     int size = 100;
     int[] arr;
