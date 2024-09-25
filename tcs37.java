@@ -50,8 +50,8 @@ class queue{
         else{
             start = (start + 1) % size;
         }
-        size--;
-         return popy;
+        currsize--;
+        return popy;
     }
     int top(){
         if(start == -1){
