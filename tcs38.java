@@ -19,13 +19,13 @@ class stack{
         }
     }
     int pop(){
-        q.remove();
+        return q.remove();
     }
     int top(){
-        q.peek();
+        return q.peek();
     }
     int size(){
-        q.size();
+        return q.size();
     }
 }
 public class tcs38 {
