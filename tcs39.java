@@ -2,6 +2,12 @@ package tcs_nqt;
 
 import java.util.Stack;
 
+
+// Implement Queue using Stack
+// TC - O(N)
+// SC - O(2*N)
+
+
 class MyQueue{
     Stack<Integer> input = new Stack<>();
     Stack<Integer> output = new Stack<>();
