@@ -2,6 +2,10 @@ package tcs_nqt;
 
 import java.util.Stack;
 
+// Prefix to Postfix - Given an prefix expression, Your task is to convert the given prefix expression to a postfix expression.
+// TC - O(N)
+// SC - O(N)
+
 public class tcs43 {
     public static void main(String[] args) {
         String pre_exp = "*-A/BC-/AKL";
