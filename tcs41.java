@@ -1,9 +1,11 @@
 package tcs_nqt;
 
+import java.util.*;
 import java.util.Stack;
 
 // Infix to postfix - Given an infix expression, Your task is to convert the given infix expression to a postfix expression.
-
+// TC - O(N) - N = length of infix expression
+// SC = O(N) - stack size of N
 
 public class tcs41 {
     public static int precedence(char c){
