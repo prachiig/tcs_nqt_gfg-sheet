@@ -3,6 +3,11 @@ package tcs_nqt;
 
 import java.util.Stack;
 
+
+// Prefix to Infix - Given an prefix expression, Your task is to convert the given prefix expression to a infix expression.
+// TC - O(N)
+// SC - O(N)
+
 public class tcs42 {
     public static void prefixToInfix(String s){
         Stack<String> st = new Stack<>();
@@ -10,7 +15,7 @@ public class tcs42 {
             if(operator(s.charAt(i))){
                 String a = st.pop();
                 String b = st.pop();
-                String c = a + c + b;
+                String c = "(" + a + s.charAt(i) + b + ")";
                 st.push(c);
             }
             else{
@@ -21,7 +26,7 @@ public class tcs42 {
     }
 
     public static boolean operator(char c){
-        switch(c):{
+        switch(c){
             case '+':
             case '-':
             case '*':
@@ -34,10 +39,9 @@ public class tcs42 {
     }
 
 
-
-
     public static void main(String[] args) {
         String exp = "*-A/BC-/AKL";
         prefixToInfix(exp);
     }
 }
+
