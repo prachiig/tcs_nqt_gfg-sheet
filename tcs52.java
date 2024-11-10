@@ -22,6 +22,8 @@ public class tcs52 {
         System.out.println(reverseWords(ans));
     }
 
+    // TC - O(N) - iterating through the loop
+    // SC - O(N) - stack space
     public static String reverseWords(String s) {
         String finalans = "";
         Stack<String> st = new Stack<>();
