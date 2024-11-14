@@ -1,4 +1,16 @@
-package tcs_nqt;
+
+
+// Given the root of a Binary Search Tree. The task is to find the minimum valued element in this given BST.
+// Eg :
+// Input:
+//            5
+//          /    \
+//         4      6
+//        /        \
+//       3          7
+//      /
+//     1
+// Output: 1
 
 
 class Node{

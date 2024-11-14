@@ -1,4 +1,4 @@
-package tcs_nqt;
+
 
 import java.util.Scanner;
 

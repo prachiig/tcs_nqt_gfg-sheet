@@ -1,6 +1,4 @@
-package tcs_nqt;
-
-import java.util.*;
+import java.util.Stack;
 
 // Given a valid parentheses string s, return the nesting depth of s. The nesting depth is the maximum number of nested parentheses.
 // Input: s = "(1+(2*3)+((8)/4))+1"
@@ -19,7 +17,7 @@ public class tcs55 {
     public static int maxDepth(String s) {
         int count = 0;
         Stack<Character> st = new Stack<>();
-        for(int i = 0; i <= s.length(); i++){
+        for(int i = 0; i < s.length(); i++){
             char c = s.charAt(i);
             if(c == '(')    st.push('(');
             if(c == ')'){

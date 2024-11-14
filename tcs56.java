@@ -1,10 +1,8 @@
-package tcs_nqt;
-
-import java.util.HashMap;
+import java.util.*;
 
 public class tcs56 {
     public static void main(String[] args) {
-        String s = "III";
+        String s = "MCMXCIV";
         System.out.println(romanToInt(s));
     }
 
@@ -18,12 +16,15 @@ public class tcs56 {
         map.put('D', 500);
         map.put('M', 1000);
 
-        for(int i = 0; i < s.length() - 1; i++){
-            char x = s.charAt(i);
-            if(map.get(s.charAt(i)) < map.get(s.charAt(i + 1)))
-                val = val + (map.get(s.charAt(i + 1)) - map.get(s.charAt(i)));
-            else
+        int val = 0;
+        for(int i = 0; i < s.length(); i++){
+            if((i+1 < s.length()) && (map.get(s.charAt(i)) < map.get(s.charAt(i+1)))){
+                val = val + (map.get(s.charAt(i+1)) - map.get(s.charAt(i)));
+                i++;
+            }
+            else{
                 val = val + map.get(s.charAt(i));
+            }
         }
         return val;
     }

@@ -1,5 +1,3 @@
-package tcs_nqt;
-
 import java.util.*;
 
 // Given an input string s, reverse the order of the words.

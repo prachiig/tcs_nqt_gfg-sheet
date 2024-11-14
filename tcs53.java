@@ -1,4 +1,4 @@
-package tcs_nqt;
+
 
 
 // You are given a string num, representing a large integer. 
