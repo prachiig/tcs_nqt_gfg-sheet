@@ -1,8 +1,3 @@
-package tcs_nqt;
-import java.util.*;
-
-
-
 // Implement Queue Data Structure using Array with all functions like pop, push, top, size, etc.
 
 
@@ -78,4 +73,40 @@ public class tcs37 {
         System.out.println(q.pop());
         System.out.println(q.size());
     }
+}
+
+
+
+// TC - O(1)
+// SC - O(1)
+class MyQueue {
+
+    int front, rear;
+	int arr[] = new int[100005];
+
+    MyQueue()
+	{
+		front=0;
+		rear=0;
+	}
+	
+	//Function to push an element x in a queue.
+	void push(int x)
+	{
+	    // Your code here
+	    arr[rear] = x;
+	    rear++;
+	    
+	} 
+
+    //Function to pop an element from queue and return that element.
+	int pop()
+	{
+		// Your code here
+		if(front == rear)
+		    return -1;
+		int popy = arr[front];
+		front++;
+		return popy;
+	} 
 }

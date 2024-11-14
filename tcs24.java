@@ -1,4 +1,3 @@
-package tcs_nqt;
 import java.util.*;
 
 // There is an array ‘A’ of size ‘N’ with an equal number of positive and negative elements.
@@ -27,7 +26,6 @@ public class tcs24 {
         }    
         sc.close();
         System.out.println(Arrays.toString(alternateNumbers(arr)));
-        
     }
 
 
@@ -51,4 +49,16 @@ public class tcs24 {
         }
         return arr;
     }
+
+
+    // There’s an array ‘A’ of size ‘N’ with positive and negative elements (not necessarily equal). 
+    // Without altering the relative order of positive and negative elements, you must return an array of alternately positive and negative values. 
+    // The leftover elements should be placed at the very end in the same order as in array A.
+    // Input:
+    // arr[] = {1,2,-4,-5,3,4}, N = 6
+    // Output:
+    // 1 -4 2 -5 3 4
+
+    
+
 }

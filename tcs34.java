@@ -1,8 +1,17 @@
-package tcs_nqt;
-import java.util.*;
-
-
 // Given a Doubly Linked List. Delete the last of a Doubly Linked List.
+// A doubly-linked list is a data structure that consists of sequentially linked nodes, and the nodes have reference to both the previous and the next nodes in the sequence of nodes.
+
+// Given a doubly-linked list, delete the node at the end of the doubly linked list.
+
+// Note:
+// You need not print anything. You’re given the head of the linked list, just return the head of the modified list.
+// Sample Input 1:
+// 5
+// 4 10 3 5 20
+
+
+// Sample Output 1:
+// 4 10 3 5 NULL
 
 
 class Node{

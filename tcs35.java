@@ -1,6 +1,3 @@
-package tcs_nqt;
-
-
 // Given a singly linked list of 'N' nodes. The objective is to determine the middle node of a singly linked list. 
 // However, if the list has an even number of nodes, we return the second middle node.
 // Sample Input 1 :

@@ -1,6 +1,3 @@
-package tcs_nqt;
-import java.util.*;
-
 
 // There is a Binary Search Tree (BST) consisting of ‘N’ nodes. Each node of this BST has some integer data.
 // You are given the root node of this BST, and an integer ‘X’. Return true if there is a node in BST having data equal to ‘X’, otherwise return false.

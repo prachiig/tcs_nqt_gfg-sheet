@@ -1,4 +1,3 @@
-package tcs_nqt;
 
 import java.util.Stack;
 
@@ -26,7 +25,7 @@ class MyQueue{
 
     int pop(){
         if(input.empty()){
-            System.out.println("empty satack, no elements");
+            System.out.println("empty stack, no elements");
         }
         int popy = input.peek();
         input.pop();

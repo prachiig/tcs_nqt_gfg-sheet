@@ -1,4 +1,3 @@
-package tcs_nqt;
 import java.util.*;
 
 // You are given an array 'arr' of length 'n', consisting of integers.

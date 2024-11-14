@@ -1,5 +1,4 @@
-package tcs_nqt;
-import java.util.*;
+
 
 // Implementation of stack using array
 // TC - O(N)
@@ -40,3 +39,36 @@ public class tcs36 {
 
     }
 }
+
+
+
+
+
+// GFG
+// class MyStack {
+//     private int[] arr;
+//     private int top;
+
+//     public MyStack() {
+//         arr = new int[1000];
+//         top = -1;
+//     }
+
+//     public void push(int x) {
+//         // Your Code
+//         top++;
+//         arr[top] = x;
+        
+//     }
+
+//     public int pop() {
+//         // Your Code
+//         if(top == -1)
+//             return -1;
+//         int popy = arr[top];
+//         top--;
+//         return popy;
+//     }
+// }
+// TC - O(1)
+// SC - O(1)

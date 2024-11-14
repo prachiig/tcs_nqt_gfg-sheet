@@ -1,8 +1,3 @@
-package tcs_nqt;
-
-import java.util.*;
-
-
 // There is a singly-linked list head and we want to delete a node node in it.
 
 // You are given the node to be deleted node. You will not be given access to the first node of head.
@@ -36,7 +31,7 @@ class Node{
 }
 public class tcs32 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        
         Node head = new Node(3);
         head.next = new Node(4);
         head.next.next = new Node(5);
@@ -47,7 +42,7 @@ public class tcs32 {
         printList(newHead);
         deleteNode2(head.next);
         printList(head);
-        sc.close();
+       
     }
 
     // Deleting the last node

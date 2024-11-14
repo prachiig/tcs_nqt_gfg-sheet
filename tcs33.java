@@ -1,6 +1,4 @@
-package tcs_nqt;
 import java.util.*;
-
 
 // Problem Statement: Given a doubly linked list, and a value ‘k’, insert a node having value ‘k’ at the end of the doubly linked list.
 // Example 1:
