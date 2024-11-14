@@ -43,4 +43,6 @@ public class tcs5 {
             return arr;
         }
     }
+    // TC - O(NlogN)
+    // SC - O(1)
 }

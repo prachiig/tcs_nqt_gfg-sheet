@@ -1,3 +1,4 @@
+// https://www.geeksforgeeks.org/problems/rotate-array-by-n-elements-1587115621/1
 // Given an array of integers arr[] of size N and an integer d, the task is to rotate the array elements to the left by d positions
 // Input:  d = 2 , arr[] = {1, 2, 3, 4, 5, 6, 7}
 // Output: 3 4 5 6 7 1 2
