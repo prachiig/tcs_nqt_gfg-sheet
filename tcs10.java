@@ -1,4 +1,3 @@
-package tcs_nqt;
 import java.util.*;
 
 // Searching in sorted array
@@ -35,7 +34,7 @@ public class tcs10 {
             if(nums[mid] == target){
                 return mid;
             }
-            else if(mid > target){
+            else if(nums[mid] > target){
                 end = mid - 1;
             }
             else{

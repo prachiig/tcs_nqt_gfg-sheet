@@ -1,4 +1,3 @@
-package tcs_nqt;
 import java.util.*;
 
 // You are given an array 'a' of size 'n' and an integer 'k'.
@@ -51,6 +50,7 @@ public class tcs19 {
         return len;
     }
 
+    
     // TC - O(N*N)
     // SC - O(1)
 

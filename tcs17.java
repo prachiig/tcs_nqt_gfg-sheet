@@ -1,4 +1,3 @@
-package tcs_nqt;
 import java.util.*;
 
 // You're given a sorted array 'a' of 'n' integers and an integer 'x'.

@@ -1,4 +1,3 @@
-package tcs_nqt;
 import java.util.*;
 
 // You are given an array 'arr' sorted in non-decreasing order and a number 'x'. You must return the index of the lower bound of 'x'.

@@ -24,6 +24,9 @@ public class tcs9 {
         int[] res = rotateArray(arr, n);
         System.out.println(Arrays.toString(res));
     }
+
+    // TC - O(N)
+    // SC - O(1)
     static int[] rotateArray(int[] arr, int n) {
         // Write your code here.
         int temp = arr[0];
@@ -35,5 +38,4 @@ public class tcs9 {
     }
 }
 
-// TC - O(N)
-// SC - O(1)
+

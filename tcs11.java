@@ -1,4 +1,3 @@
-package tcs_nqt;
 import java.util.*;
 
 // Sam want to read exactly ‘TARGET’ number of pages.
@@ -34,8 +33,10 @@ public class tcs11 {
         System.out.println(res_2pointers);
     }
 
+    
     // TC - O(N*N)
     // SC - O(1)
+
     public static String read(int n, int []book, int target){
         // Write your code here.
         for(int i = 0; i < n; i++){
@@ -50,6 +51,7 @@ public class tcs11 {
 
     // TC - O(N)
     // SC - O(N)
+
     public static String read_map(int n, int []book, int target){
         // Write your code here.
         HashMap<Integer, Integer> map = new HashMap<>();

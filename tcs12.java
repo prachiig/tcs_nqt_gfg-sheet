@@ -1,4 +1,3 @@
-package tcs_nqt;
 import java.util.*;
 
 // You have been given an integer array/list(ARR) of size 'N'. It only contains 0s, 1s and 2s. Write a solution to sort this array/list.
@@ -19,8 +18,8 @@ public class tcs12 {
         sort012(arr);
     }
 
-    
-    // TC - O(N) + O(N)    
+
+    // TC - O(N) + O(N)     -> counting the frequency and then replacing in-place in original array
     // SC- O(1)
 
     public static void sort012(int[] arr)

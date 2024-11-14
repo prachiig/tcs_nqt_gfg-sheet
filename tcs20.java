@@ -1,5 +1,3 @@
-package tcs_nqt;
-
 import java.util.*;
 
 // You are given a positive integer ‘n’.
